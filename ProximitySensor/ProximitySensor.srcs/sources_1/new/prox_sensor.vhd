@@ -33,7 +33,7 @@ use IEEE.NUMERIC_STD.ALL;
 --use UNISIM.VComponents.all;
 
 entity prox_sensor is
-    Port ( clk : in STD_LOGIC;
+    Port ( clk_m, clk_t : in STD_LOGIC;
            echo : in STD_LOGIC;
            trig : out STD_LOGIC;
            distance : out std_logic_vector (15 downto 0));
